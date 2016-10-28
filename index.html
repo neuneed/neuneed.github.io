@@ -1,5 +1,5 @@
 ---
-title: Roland Lee's Blog
+title: Neuneed's Blog
 ---
 {% include showcase.html %}
 {% include greeting.html %}
@@ -7,12 +7,12 @@ title: Roland Lee's Blog
 {% if site.posts != empty %}
 
 <div class="recent-posts">
-  <h1>最近发布</h1>
+  <h1>Recent content</h1>
   {% for post in site.posts limit: 3 %}
     {% if forloop.first %}
       {% assign add_class = 'most-recent' %}
       {% capture fresh_tag %}
-        &nbsp;<span class="badge"><smaller>最新</smaller></span>
+        &nbsp;<span class="badge"><smaller>New</smaller></span>
       {% endcapture %}
     {% endif %}
     <ul class="homepage-posts {{ add_class }}">
@@ -34,26 +34,9 @@ title: Roland Lee's Blog
     {% assign fresh_tag = '' %}
   {% endfor %}
   <ul>
-    <a href="{{ site.baseurl }}/list.html">查看更多...</a>
+    <a href="{{ site.baseurl }}/list.html">See more...</a>
   </ul>
     <!-- a标签的链接，设置为对应的下载链接；点击打开的动作，在click事件中注册 -->  
-<a href="https://itunes.apple.com/cn/app/shai-chu-yi-sidechef/id977078657" id="openApp">SideChef</a>  
-<!--
-<script type="text/javascript">  
-  document.getElementById('openApp').onclick = function(e){  
-    // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为  
-    // 否则打开a标签的href链接  
-    var ifr = document.createElement('iframe');  
-    ifr.src = 'sidechefcn://recipe/123';  
-    ifr.style.display = 'none';  
-    document.body.appendChild(ifr);  
-    window.setTimeout(function(){  
-      document.body.removeChild(ifr);  
-    },3000)  
-  };  
-</script>
--->
-
     <a
        </a>
 </div>

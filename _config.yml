@@ -1,20 +1,19 @@
-name: 壹步浮生录
-author: Roland Lee
-baseurl: 
-description:  技术，杂文，观后感，等。
-github: https://www.github.com/liyalin
+name: neuneed
+author: neuneed
+baseurl: neuneed.github.io
+description:  one more thing.
+github: https://www.github.com/neuneed
 twitter: http://www.twitter.com/
 facebook: http://www.facebook.com
 linkedin: http://www.linkedin.com
-email: liyalin1991[at]live.com
+email: neuneed@gmail.com
 encoding: utf-8
 language: zh-CN
 
 ##Make sure to edit the above fields, especially for disqus.
 
-
 highlighter: pygments
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
   extensions: ["tables"]
 
