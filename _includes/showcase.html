@@ -1,0 +1,25 @@
+    </div>
+    <style>
+    
+    /*.showcase-wrapper {background-image: url("{{ site.baseurl }}/images/yasuo.jpg");}*/
+    /*.showcase-wrapper {background-image: url("http://img.tuku.com/upload/attach/2014/12/116631-2iJ5sax.jpg");}*/
+/*       .showcase-wrapper {background-image: url("http://www.pp3.cn/uploads/201412/2014121908.jpg");}*/
+/*   .showcase-wrapper {background-image: url("http://www.pp3.cn/uploads/201409/2014092610.jpg");}*/
+   .showcase-wrapper {background-image: url("https://images.alphacoders.com/675/thumb-1920-67511.jpg");}
+        
+    </style>
+    
+    <div class="showcase-wrapper sticky">
+      <div class="showcase-text">
+          {% for post in site.posts limit: 1 %}
+         
+          <span class="badge lazy">
+              <smaller>最新文章</smaller></span>
+          <br>{{ post.title }}<br>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+          	<button type="button" class="btn btn-default showcase-button">查看</button>
+          </a>
+          {% endfor %}
+      </div>
+    </div>
+    <div class="container">

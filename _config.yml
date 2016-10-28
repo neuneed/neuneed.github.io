@@ -1,6 +1,31 @@
-permalink: /:title
+name: 壹步浮生录
+author: Roland Lee
+baseurl: 
+description:  技术，杂文，观后感，等。
+github: https://www.github.com/liyalin
+twitter: http://www.twitter.com/
+facebook: http://www.facebook.com
+linkedin: http://www.linkedin.com
+email: liyalin1991[at]live.com
+encoding: utf-8
+language: zh-CN
 
-title: BeiYuu.com
-url: http://beiyuu.com
-feed: /atom.xml
-author_info: <a href="http://beiyuu.com/">BeiYuu</a>
+##Make sure to edit the above fields, especially for disqus.
+
+
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
